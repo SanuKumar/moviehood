@@ -1,6 +1,26 @@
 <h1>
-  App Working !!
-  <via-first></via-first>
-
+  Class Property: {{ projectName }}
+  <mh-first></mh-first>
+  <input type="text" value="{{ projectName }}"> 
+  <hr>
+  <!-- <input type="text" bind-value="projectName"> -->
+  <wishlist></wishlist>
 </h1>
+<hr>
+<h2>
+    
+</h2>
+
+<a [href]="projectUrl" target="_blank"
+  [style.color] = "setColor ? 'pink' : 'red'"
+  [style.backgroundColor] = " setColor? 'black' : 'gray'"
+  [style.frontWeight] = "setWeight? 'bold' : 'normal' "
+  
+  [ngStyle] = "{
+    'color' : setColor ? 'black' : 'yellow' ,
+    'backgroundColor' : setColor ? 'pink' : 'white'
+  }"
+
+>{{ projectName }}</a>
+
 
